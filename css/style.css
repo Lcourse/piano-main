@@ -57,5 +57,9 @@ body {
 .switcher--active {
     background-color: #006eff;
     justify-content: flex-end;
+}
 
+.checkbox__label {
+    display: flex;
+    gap: 15px;
 }
