@@ -3,9 +3,7 @@ const keys = document.querySelectorAll(".key");
 const handleMouseDown = (key) => {
 
     if (key.className.includes('black')) {
-        key.style.background = 'linear-gradient(#222, black)'
-        key.style.borderBottom = 'none'
-        key.style.height = '148px'
+        key.classList.add('black--pressed')
         return;
     }
 
@@ -14,6 +12,7 @@ const handleMouseDown = (key) => {
 
 const handleMouseUp = (key) => {
     if (key.className.includes('black')) {
+        key.classList.remove('black-pressed')
         return;
     }
     
