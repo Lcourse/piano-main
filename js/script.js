@@ -11,8 +11,9 @@ const handleMouseDown = (key) => {
 }
 
 const handleMouseUp = (key) => {
+
     if (key.className.includes('black')) {
-        key.classList.remove('black-pressed')
+        key.classList.remove('black--pressed')
         return;
     }
     
@@ -26,3 +27,5 @@ keys.forEach((key) => {
 
     key.addEventListener('mouseup', () => handleMouseUp(key))
 });
+
+console.log()
