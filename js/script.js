@@ -18,6 +18,7 @@ const handleMouseDown = (key) => {
     key.style.background = '#ddd'
 }
 
+/* Função que apertar a tecla e estilização #ddd */
 const handleMouseUp = (key) => {
 
     if (key.className.includes('black')) {
