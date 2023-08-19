@@ -49,9 +49,9 @@ checkbox.addEventListener("change", ({ target }) => {
 });
 
 const keyDownMapper = {
-  "message": "você digitou"
+  "q": () => handleMouseDown(keys[1])
 }
 
 document.addEventListener('keydown', (event) => {
-    handleMouseDown(keys[0])
+    keyDownMapper[event.key]()
 })
