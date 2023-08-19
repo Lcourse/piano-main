@@ -47,3 +47,11 @@ checkbox.addEventListener("change", ({ target }) => {
   switcher.classList.remove('switcher--active');
   keysSection.classList.add('disabled-keys')
 });
+
+const keyDownMapper = {
+  "message": "você digitou"
+}
+
+document.addEventListener('keydown', (event) => {
+    handleMouseDown(keys[0])
+})
