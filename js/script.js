@@ -1,5 +1,10 @@
 const keys = document.querySelectorAll(".key");
 
+const playNote = (note) => {
+    const audio = new audio()
+
+}
+
 const handleMouseDown = (key) => {
 
     if (key.className.includes('black')) {
@@ -28,4 +33,3 @@ keys.forEach((key) => {
     key.addEventListener('mouseup', () => handleMouseUp(key))
 });
 
-console.log()
