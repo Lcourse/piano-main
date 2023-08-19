@@ -1,4 +1,5 @@
 const keys = document.querySelectorAll(".key");
+const checkbox = document.querySelector('.checkbox__keys')
 
 /* Função de tocar a nota */
 const playNote = (note) => {
@@ -37,3 +38,7 @@ keys.forEach((key) => {
     key.addEventListener('mouseup', () => handleMouseUp(key))
 });
 
+checkbox.addEventListener('change', ({ target }) => {
+    alert(target.checked)
+
+})
