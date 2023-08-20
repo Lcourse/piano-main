@@ -104,6 +104,7 @@ const keyUpMapper = {
 };
 
 document.addEventListener("keydown", (event) => {
+  event.preventDefault()
   keyDownMapper[event.key]();
 });
 
